@@ -1,0 +1,36 @@
+.dashboard-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 240px calc(100% - 240px);
+}
+
+.dashboard-container .grid-items {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.dashboard-container .sidebar-wrapper {
+    position: sticky;
+    top: 0;
+    overflow-y: auto;
+    height: 100vh;
+}
+
+/* CODE FOR THE MAIN CONTAINER OF ALL COMPONENTS AND PAGES */
+
+.main-grid-container {
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .dashboard-container {
+        grid-template-columns: 180px calc(100% - 180px);
+    }
+}
+
+@media (max-width: 576px) {
+    .dashboard-container {
+        grid-template-columns: 50px calc(100% - 50px);
+    }
+}

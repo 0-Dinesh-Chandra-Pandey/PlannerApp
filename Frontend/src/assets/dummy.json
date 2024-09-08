@@ -1,0 +1,33 @@
+{
+    "name": "Alex",
+    "username": "alex014290",
+    "password": "alex@12341",
+    "taskCompletedThisMonth": 0,
+    "totalTaskCompleted": 0,
+    "productivityScore": [
+        {
+            "score": 0,
+            "date": "2024-08-20T00:00:00.000Z"
+        },
+        {
+            "score": 8,
+            "date": "2024-08-21T00:00:00.000Z"
+        },
+        {
+            "score": 4,
+            "date": "2024-08-23T00:00:00.000Z"
+        },
+        {
+            "score": 10,
+            "date": "2024-08-25T00:00:00.000Z"
+        },
+        {
+            "score": 9,
+            "date": "2024-08-27T00:00:00.000Z"
+        },
+        {
+            "score": 16,
+            "date": "2024-08-29T00:00:00.000Z"
+        }
+    ]
+}

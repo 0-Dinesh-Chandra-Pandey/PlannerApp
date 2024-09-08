@@ -1,0 +1,83 @@
+.task-card-container {
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ddd;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.task-card-container:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.task-card-container .title-line {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.task-card-container .title-line h2 {
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    color: #000;
+    margin: 0;
+}
+
+
+.task-card-container .title-line span {
+    color: blue;
+    font-size: 30px;
+}
+
+.task-card-container .title-line .icon {
+    font-size: 1.2em;
+    color: #555;
+}
+
+.task-card-container .dates {
+    display: flex;
+    margin: 10px 0;
+    color: #777;
+}
+
+.task-card-container .dates p {
+    flex: 1;
+    margin: 0;
+    font-size: 14px ;
+}
+
+.task-card-container .dates p span {
+    font-style: italic;
+    font-weight: bold;
+    color: #000;
+}
+
+.task-card-container .buttons {
+    display: flex;
+    justify-content: space-between;
+    gap: 8px;
+    margin: 20px 0 0;
+}
+
+.task-card-container .buttons a, .task-card-button {
+    flex: 1;
+    text-align: center;
+    border: 1px solid #000;
+    color: #000;
+    padding: 10px 0;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 14px;
+    transition: background 0.3s, transform 0.3s;
+    background: transparent;
+    cursor: pointer;
+    
+    /* BUTTON ON ACTIVE STATE */
+    &:active {
+        background-color: #000;
+        color: #fff;
+    }
+}
+

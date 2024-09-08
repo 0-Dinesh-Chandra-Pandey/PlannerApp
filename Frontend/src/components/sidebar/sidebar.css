@@ -1,0 +1,94 @@
+.sidebar-container {
+    width: 100%;
+    height: 100%;
+    border-right: 1px solid #969696;
+    top: 0;
+    left: 0;
+}
+
+#logo {
+    padding: 10px 0;
+    border-bottom: 1px solid #969696;
+    text-align: center;
+}
+
+#logo .icon {
+    width: 32px;
+    height: 32px;
+    margin: 0 auto;
+    display: none;
+}
+
+#logo .icon img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    padding: 4px;
+    font-size: 18px;
+    font-weight: bolder;
+}
+
+#logo h1 {
+    padding: 4px 10px;
+    text-align: center;
+    font-weight: 600;
+}
+
+#sidebar-options {
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+}
+
+#sidebar-options a {
+    margin: 4px 0;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    text-decoration: none;
+    color: #000;
+}
+
+#sidebar-options a i {
+    font-size: 18px;
+}
+
+#sidebar-options .active {
+    background: black;
+}
+
+#sidebar-options .active {
+    color: #fff;
+}
+
+@media (max-width: 992px) {
+    #logo h1 {
+        font-size: 26px;
+    }
+}
+
+@media (max-width: 768px) {
+    #sidebar-options a {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 576px) {
+    #logo .icon {
+        display: block;
+    }
+    
+    #logo h1 {
+        display: none;
+    }
+    
+    #sidebar-options a {
+        padding: 4px 8px;
+        font-size: 14px;
+    }
+    
+    #sidebar-options a span {
+        display: none;
+    }
+}

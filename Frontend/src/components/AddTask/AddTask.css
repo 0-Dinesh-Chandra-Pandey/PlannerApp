@@ -1,0 +1,174 @@
+.add-task-main {
+    width: 100%;
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    position: relative;
+}
+
+.add-task-main form {
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    box-shadow: none;
+    background-color: transparent;
+}
+
+.add-task-main form .formBox {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 16px;
+}
+
+.add-task-main form .formBox label {
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #555;
+}
+
+.add-task-main form .formBox input,
+.add-task-main form .formBox textarea,
+.add-task-main form .formBox select {
+    padding: 12px 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background: #f9f9f9;
+    transition: background 0.3s ease;
+    box-sizing: border-box;
+}
+
+.add-task-main form .formBox input:focus,
+.add-task-main form .formBox textarea:focus,
+.add-task-main form .formBox select:focus {
+    background: #fff;
+    border-color: #141414;
+    outline: none;
+}
+
+.add-task-main form .formBox .required {
+    border-color: #e31111;
+    background-color: rgba(227, 17, 17, 0.15);
+}
+
+.add-task-main form .formBox .required:focus {
+    border-color: #e31111;
+    background-color: rgba(227, 17, 17, 0.15);
+}
+
+
+.add-task-main form .formBox textarea {
+    height: 150px;
+    resize: none;
+    overflow: auto;
+}
+
+.add-task-main form .deadlineBox {
+    margin-bottom: 16px;
+    width: 100%;
+}
+
+.add-task-main form .deadlineBox .dateBox {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+}
+
+.add-task-main form .deadlineBox .dateBox .separator-box {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin: 6px 0;
+}
+
+.add-task-main form .deadlineBox .dateBox .separator-box label {
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #555;
+}
+
+.add-task-main form .deadlineBox .dateBox .separator-box input {
+    padding: 12px 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background: #f9f9f9;
+    transition: background 0.3s ease;
+}
+
+.add-task-main form .deadlineBox .dateBox .separator-box .required {
+    border-color: #e31111;
+    background-color: rgba(227, 17, 17, 0.15);
+}
+
+.add-task-main form .deadlineBox .dateBox .separator-box .required:focus {
+    border-color: #e31111;
+    background-color: rgba(227, 17, 17, 0.15);
+}
+
+.add-task-main form .deadlineBox .dateBox .separator-box input:focus {
+    background: #fff;
+    border-color: #141414;
+    outline: none;
+}
+
+.add-task-main form .deadlineBox .checkbox {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 12px;
+}
+
+.add-task-main form .deadlineBox .checkbox input {
+    margin-right: 8px;
+}
+
+.add-task-main form .buttonBox {
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: right;
+}
+
+.add-task-main form .buttonBox button {
+    width: 100%;
+    padding: 12px;
+    background-color: #000000;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    
+    &:hover {
+        background-color: #141414;
+    }
+}
+
+.add-task-main form .buttonBox .error-message {
+    margin-top: 8px;
+    color: #e31111;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .add-task-main form .deadlineBox .dateBox {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .add-task-main form .buttonBox button {
+        width: auto;
+        flex: 1;
+    }
+}

@@ -1,0 +1,32 @@
+.main-account-container {
+    margin: 20px 0;
+}
+
+.main-account-container .user-overview {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.main-account-container .user-overview .user-overview-box {
+    flex: 1;
+}
+
+@media (max-width: 992px) {
+    .main-account-container .user-overview {
+        width: 90%;
+    }
+}
+
+
+@media (max-width: 576px) {
+    .main-account-container .user-overview {
+        width: 90%;
+    }
+    
+    .main-account-container .user-overview .user-overview-box {
+        width: 100%;
+    }
+}

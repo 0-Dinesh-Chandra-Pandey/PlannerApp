@@ -1,0 +1,26 @@
+.main-overview-container .tasks-container {
+    padding: 20px 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    position: relative;
+}
+
+.tasks-loader {
+    width: 100%;
+    height: 300px;
+}
+
+@media (max-width: 992px) {
+    
+    .main-overview-container .tasks-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .main-overview-container .tasks-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
