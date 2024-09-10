@@ -38,7 +38,7 @@ const addUserTask = createAsyncThunk(
         try {
             // SENDING POST REQUEST
             const response = await fetch(
-                `/api/task/${userID}/addTask`,
+                `https://plannerapp-backend.onrender.com/api/task/${userID}/addTask`,
                 {
                     method: "POST",
                     headers: {

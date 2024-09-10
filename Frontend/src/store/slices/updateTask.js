@@ -9,7 +9,7 @@ const updateTask = createAsyncThunk(
         try {
 
             const response = await fetch(
-                `/api/task/${taskId}/updateTask`,
+                `https://plannerapp-backend.onrender.com/api/task/${taskId}/updateTask`,
                 {
                     method: "PUT",
                     headers: {

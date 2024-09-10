@@ -7,7 +7,7 @@ const deleteTask = createAsyncThunk(
     async ({ taskId }, { rejectWithValue }) => {
         try {
             const response = await fetch(
-                `/api/task/${taskId}/deleteTask`,
+                `https://plannerapp-backend.onrender.com/api/task/${taskId}/deleteTask`,
                 {
                     method: "DELETE",
                 }

@@ -6,7 +6,7 @@ const createUserAccount = createAsyncThunk(
         try {
             // sending user data to database
             const response = await fetch(
-                `/api/auth/register`,
+                `https://plannerapp-backend.onrender.com/api/auth/register`,
                 {
                     method: "POST",
                     headers: {

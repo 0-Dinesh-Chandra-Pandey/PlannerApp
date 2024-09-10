@@ -9,7 +9,7 @@ const fetchData = createAsyncThunk(
     async (token, { rejectWithValue }) => {
         try {
             const response = await fetch(
-                "/api/auth/userData",
+                "https://plannerapp-backend.onrender.com/api/auth/userData",
                 {
                     method: "GET",
                     headers: {

@@ -5,7 +5,7 @@ const checkUserLogin = createAsyncThunk(
     async (authData, { rejectWithValue }) => {
         try {
             const response = await fetch(
-                "/api/auth/login",
+                "https://plannerapp-backend.onrender.com/api/auth/login",
                 {
                     method: "POST",
                     headers: {

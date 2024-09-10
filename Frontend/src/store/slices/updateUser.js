@@ -7,7 +7,7 @@ const updateUser = createAsyncThunk(
     async ({ userId, updatedData }, { rejectWithValue }) => {
         try {
             const response = await fetch(
-                `/api/auth/${userId}/updateUser`,
+                `https://plannerapp-backend.onrender.com/api/auth/${userId}/updateUser`,
                 {
                     method: "PUT",
                     headers: {
